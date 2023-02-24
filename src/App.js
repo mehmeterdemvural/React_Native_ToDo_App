@@ -24,6 +24,7 @@ function App() {
               setToDoList={setToDoList}
             />
           )}
+          keyExtractor={item => item.title}
         />
       </View>
       <AddToDo toDoList={toDoList} setToDoList={setToDoList} />
